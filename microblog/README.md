@@ -1,4 +1,6 @@
 
+About
+This is the app that was submitted by the team I coached for the Menlo Hacks Hackathon
 
 Running
 -------
