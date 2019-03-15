@@ -1,0 +1,12 @@
+{% extends "droneBase.html" %}
+{% block content %}
+
+   <!-- {% for swipe in swipes %}
+    <div><p>{{ swipe.rfid }} Entered at: <b>{{ swipe.time }}</b></p></div>
+    {% endfor %} -->
+
+    {% for userswp in userswipes %}
+    <div><p>{{userswp.username}} Entered at : <b> {{ userswp.time }}</b></p></div>
+    {% endfor %}
+
+{% endblock %} 

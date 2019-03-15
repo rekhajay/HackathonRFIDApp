@@ -1,0 +1,10 @@
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% extends "droneBase.html" %}
+
+{% block content %}
+<center>
+    {{ wtf.quick_form(form) }}
+  </center>
+{% endblock %}

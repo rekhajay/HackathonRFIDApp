@@ -1,0 +1,32 @@
+{% extends "droneBase.html" %}
+
+{% block content %}
+<center>
+  <br>
+  <br>
+  <br>
+<h1> Sign In!</h1>
+<form action="" method="post" nonvalidate>
+  {{form.hidden_tag()}}
+  <p>
+      {{form.username.label}}<br>
+      {{form.username(size=32)}}
+  </p>
+  <p>
+      {{form.password.label}}<br>
+      {{form.password(size=32)}}
+  </p>
+  <p>
+    {{ form.remember_me() }} {{ form.remember_me.label }}
+  </p>
+  <p>
+    {{ form.submit(class = 'siButton') }}
+  </p>
+  <p>New User? <a href="{{ url_for('register') }}">Click to Register!</a>
+  </p>
+
+
+</form>
+
+</center>
+{% endblock %}
